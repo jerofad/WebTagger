@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tagger</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="libs/css/bootstrap.css" rel="stylesheet"/>
+    <link href="libs/css/app.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- 1. Load libraries -->
+    <script src="libs/js/system-polyfills.js"></script>
+    <script src="libs/js/shims_for_IE.js"></script> 
+    <script src="libs/js/es6-shim.min.js"></script>
+    <script src="libs/js/angular2-polyfills.js"></script>
+    <script src="libs/js/system.js"></script>
+    <script src="libs/js/rx.js"></script>
+    <script src="libs/js/angular2.dev.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                appScripts: {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+    </script>
+    <script>
+        System.import('appScripts/boot')
+            .then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+    <tagger-app>Loading...</tagger-app>   
+</body>
+</html>

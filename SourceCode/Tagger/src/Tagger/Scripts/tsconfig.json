@@ -1,0 +1,17 @@
+﻿{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "outDir": "../wwwroot/appScripts/",
+    "removeComments": false,
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": true
+}
